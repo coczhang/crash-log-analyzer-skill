@@ -1,0 +1,10 @@
+{
+  "exit_classification": "forced kill",
+  "platforms": ["linux"],
+  "references": ["references/linux.md", "references/watchdog.md"],
+  "signals_or_statuses": ["status=9/KILL", "exit=137"],
+  "key_fields": {
+    "systemd_result": ["signal"],
+    "exit_code": ["137"]
+  }
+}

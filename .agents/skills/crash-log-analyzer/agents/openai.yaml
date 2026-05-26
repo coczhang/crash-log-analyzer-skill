@@ -1,0 +1,4 @@
+interface:
+  display_name: "Crash Log Analyzer"
+  short_description: "Analyze and collect crash evidence"
+  default_prompt: "Use $crash-log-analyzer to analyze this crash log, classify the exit, apply the quality gate, and propose verification steps."

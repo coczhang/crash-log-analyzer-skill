@@ -1,0 +1,16 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["linux"],
+  "domains": ["ffmpeg_video", "qt"],
+  "references": ["references/linux.md", "references/ffmpeg-video.md", "references/qt-cpp.md"],
+  "confidence": "high",
+  "signals_or_statuses": ["status=11/SEGV"],
+  "key_fields": {
+    "systemd_result": ["core-dump"],
+    "exec_main_status": ["11"]
+  },
+  "fault_context": {
+    "first_faulting_frame": "#0  av_hwframe_transfer_data",
+    "first_app_frame": "#1  D3D11VAFrameMapper::map"
+  }
+}

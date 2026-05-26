@@ -1,0 +1,7 @@
+==4242==ERROR: AddressSanitizer: heap-use-after-free on address 0x604000000010 at pc 0x000000401234 bp 0x7ffdbeef sp 0x7ffdbec0
+READ of size 8 at 0x604000000010 thread T3
+    #0 0x7f0011112222 in __interceptor_memcpy
+    #1 0x00000051cafe in VideoBuffer::releaseFrame(VideoFrame*) /src/video_buffer.cpp:88
+    #2 0x00000051cb10 in DecoderWorker::onFrameReady(AVFrame*) /src/decoder_worker.cpp:141
+SUMMARY: AddressSanitizer: heap-use-after-free /src/video_buffer.cpp:88 in VideoBuffer::releaseFrame(VideoFrame*)
+==4242==ABORTING

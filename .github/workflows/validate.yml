@@ -1,0 +1,32 @@
+name: Validate crash-log-analyzer skill
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run Python validation
+        run: python -B tests/run_all.py
+
+      - name: Validate shell scripts
+        run: |
+          bash -n .agents/skills/crash-log-analyzer/scripts/collect_linux_crash_info.sh
+          bash -n .agents/skills/crash-log-analyzer/scripts/collect_macos_crash_info.sh
+
+      - name: Validate PowerShell script
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = "Stop"
+          $script = Get-Content -Raw .agents/skills/crash-log-analyzer/scripts/collect_windows_crash_info.ps1
+          $null = [scriptblock]::Create($script)

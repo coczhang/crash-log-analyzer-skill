@@ -1,0 +1,12 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["windows"],
+  "domains": ["qt"],
+  "references": ["references/windows.md", "references/qt-cpp.md"],
+  "exception_codes": ["0xc0000005"],
+  "key_fields": {
+    "windows_event_id": ["1000"],
+    "fault_offset": ["0x0000000000123456"],
+    "report_id": ["6f7a1111-2222-3333-4444-555566667777"]
+  }
+}

@@ -1,0 +1,6 @@
+2026-05-26T10:05:00.000Z watchdog process_start pid=9001 process_start_time=2026-05-26T10:00:00.000Z
+2026-05-26T10:05:10.000Z watchdog heartbeat_timeout pid=9001 last_heartbeat_time=2026-05-26T10:04:30.000Z
+2026-05-26T10:05:10.100Z watchdog kill_requested pid=9001 signal=SIGTERM
+2026-05-26T10:05:15.100Z watchdog kill_grace_period_expired pid=9001
+2026-05-26T10:05:15.200Z watchdog hard_kill pid=9001 signal=SIGKILL
+2026-05-26T10:05:15.400Z watchdog process_exit pid=9001 exit_code=137 restart_reason=heartbeat_timeout

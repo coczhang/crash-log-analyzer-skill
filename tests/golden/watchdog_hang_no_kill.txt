@@ -1,0 +1,3 @@
+2026-05-26T13:00:00.000Z watchdog process_start pid=777 process_start_time=2026-05-26T12:55:00.000Z
+2026-05-26T13:05:10.000Z watchdog heartbeat_timeout pid=777 last_heartbeat_time=2026-05-26T13:04:30.000Z
+2026-05-26T13:05:10.050Z watchdog classification=hang action=diagnostic_thread_dump_only restart_reason=heartbeat_timeout

@@ -1,0 +1,6 @@
+May 26 12:00:01 host systemd[1]: Reached target System Shutdown.
+May 26 12:00:02 host systemd[1]: app.service: Stopping because the system is rebooting.
+May 26 12:00:03 host systemd[1]: app.service: Main process exited, code=killed, status=15/TERM
+Result=success
+ExecMainStatus=15
+restart_reason=system_shutdown

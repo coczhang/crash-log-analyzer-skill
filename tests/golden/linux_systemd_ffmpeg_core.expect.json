@@ -1,0 +1,11 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["linux"],
+  "domains": ["ffmpeg_video", "qt"],
+  "references": ["references/linux.md", "references/ffmpeg-video.md", "references/qt-cpp.md"],
+  "signals_or_statuses": ["status=11/SEGV"],
+  "key_fields": {
+    "systemd_result": ["core-dump"],
+    "exec_main_status": ["11"]
+  }
+}

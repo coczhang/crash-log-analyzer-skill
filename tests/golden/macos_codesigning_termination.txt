@@ -1,0 +1,8 @@
+Incident Identifier: 44444444-5555-6666-7777-88889999aaaa
+Process:               CameraAgent [321]
+Path:                  /Applications/CameraAgent.app/Contents/MacOS/CameraAgent
+Code Type:             ARM-64
+Termination Reason:    Namespace CODESIGNING, Code 0x1
+Termination Description: DYLD, Library not loaded due to library validation
+Binary Images:
+       0x102000000 -        0x1022fffff +CameraAgent arm64  <ABCDEF12-3456-7890-ABCD-EF1234567890> /Applications/CameraAgent.app/Contents/MacOS/CameraAgent

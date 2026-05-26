@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "crash-log-analyzer golden expectation",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "exit_classification": {
+      "type": "string",
+      "enum": [
+        "normal exit",
+        "crash",
+        "forced kill",
+        "hang",
+        "hang followed by forced kill",
+        "shutdown/restart",
+        "requested stop",
+        "unknown"
+      ]
+    },
+    "platforms": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["windows", "linux", "macos"] },
+      "uniqueItems": true
+    },
+    "domains": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["qt", "ffmpeg_video", "watchdog", "threading", "memory"] },
+      "uniqueItems": true
+    },
+    "references": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "exception_codes": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^0x[0-9a-fA-F]{8,16}$" },
+      "uniqueItems": true
+    },
+    "signals_or_statuses": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "fault_context": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "key_fields": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true
+      }
+    }
+  }
+}

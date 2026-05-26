@@ -1,0 +1,8 @@
+FAULTING_IP:
+CameraApp!VideoWidget::paintEvent+31
+00007ff6`12345671 488b01          mov     rax,qword ptr [rcx]
+EXCEPTION_CODE: (NTSTATUS) 0xc0000005 - The instruction referenced memory at 0x0000000000000000.
+STACK_TEXT:
+00 000000b1`9abfd570 00007ff6`12345671 CameraApp!VideoWidget::paintEvent+0x31
+01 000000b1`9abfd5f0 00007ffa`01020304 Qt6Widgets!QWidget::event+0x2a
+02 000000b1`9abfd650 00007ff6`12346000 CameraApp!MainWindow::eventFilter+0x90

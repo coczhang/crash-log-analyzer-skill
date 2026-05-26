@@ -1,0 +1,5 @@
+May 26 11:00:01 host systemd[1]: app.service: Main process exited, code=killed, status=15/TERM
+May 26 11:00:01 host systemd[1]: app.service: Stopped Camera service after operator request.
+Result=signal
+ExecMainStatus=15
+exit_code=143

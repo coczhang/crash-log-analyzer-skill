@@ -1,0 +1,8 @@
+May 26 10:00:01 host systemd[1]: app.service: Main process exited, code=dumped, status=11/SEGV
+May 26 10:00:01 host systemd[1]: app.service: Failed with result 'core-dump'.
+May 26 10:00:01 host kernel: app[1234]: segfault at 0 ip 00007f00 in libavcodec.so.60
+Result=core-dump
+ExecMainStatus=11
+#0  avcodec_send_packet
+#1  Decoder::decode
+#2  QThreadPrivate::start

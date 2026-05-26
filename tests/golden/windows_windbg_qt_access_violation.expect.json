@@ -1,0 +1,17 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["windows"],
+  "domains": ["qt"],
+  "references": ["references/windows.md", "references/qt-cpp.md"],
+  "confidence": "high",
+  "exception_codes": ["0xc0000005"],
+  "key_fields": {
+    "exception_code": ["0xc0000005"]
+  },
+  "fault_context": {
+    "exception_code": "0xc0000005",
+    "faulting_ip": "CameraApp!VideoWidget::paintEvent+31",
+    "first_faulting_frame": "00 000000b1`9abfd570 00007ff6`12345671 CameraApp!VideoWidget::paintEvent+0x31",
+    "first_app_frame": "00 000000b1`9abfd570 00007ff6`12345671 CameraApp!VideoWidget::paintEvent+0x31"
+  }
+}

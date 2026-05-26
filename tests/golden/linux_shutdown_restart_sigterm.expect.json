@@ -1,0 +1,11 @@
+{
+  "exit_classification": "shutdown/restart",
+  "platforms": ["linux"],
+  "references": ["references/linux.md", "references/watchdog.md"],
+  "confidence": "medium",
+  "signals_or_statuses": ["status=15/TERM"],
+  "key_fields": {
+    "restart_reason": ["system_shutdown"],
+    "exec_main_status": ["15"]
+  }
+}

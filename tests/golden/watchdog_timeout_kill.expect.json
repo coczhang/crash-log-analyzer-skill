@@ -1,0 +1,12 @@
+{
+  "exit_classification": "hang followed by forced kill",
+  "domains": ["watchdog"],
+  "references": ["references/watchdog.md"],
+  "signals_or_statuses": ["SIGTERM", "SIGKILL", "exit=137"],
+  "key_fields": {
+    "pid": ["9001"],
+    "last_heartbeat_time": ["2026-05-26T10:04:30.000Z"],
+    "restart_reason": ["heartbeat_timeout"],
+    "exit_code": ["137"]
+  }
+}

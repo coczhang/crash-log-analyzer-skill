@@ -1,0 +1,8 @@
+May 26 14:00:01 host systemd[1]: app.service: Main process exited, code=dumped, status=11/SEGV
+May 26 14:00:01 host systemd[1]: app.service: Failed with result 'core-dump'.
+Result=core-dump
+ExecMainStatus=11
+#0  av_hwframe_transfer_data
+#1  D3D11VAFrameMapper::map
+#2  VideoFrameUploader::upload(AVFrame*)
+#3  QThreadPrivate::start

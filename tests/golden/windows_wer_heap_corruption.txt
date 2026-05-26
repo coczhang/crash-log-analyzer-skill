@@ -1,0 +1,10 @@
+Fault bucket 1729448486488140084, type 5
+Event Name: APPCRASH
+Event ID: 1001
+Application Name: RendererService.exe
+Application Version: 5.0.0.17
+Fault Module Name: ucrtbase.dll
+Exception Code: c0000374
+Exception Offset: 000000000007286e
+Report Id: 77777777-8888-9999-aaaa-bbbbbbbbbbbb
+Heap corruption detected after AVFrame release in video pipeline.

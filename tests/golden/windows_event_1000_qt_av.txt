@@ -1,0 +1,12 @@
+Log Name: Application
+Source: Application Error
+Event ID: 1000
+Faulting application name: PlugOS.exe, version: 2.4.1.0, time stamp: 0x65b10101
+Faulting module name: Qt6Core.dll, version: 6.9.3.0, time stamp: 0x66020102
+Exception code: 0xc0000005
+Fault offset: 0x0000000000123456
+Faulting process id: 0x4f8
+Faulting application start time: 0x01db4f0012345678
+Report Id: 6f7a1111-2222-3333-4444-555566667777
+00 000000aa`11112222 00007ff8`11112222 Qt6Core!QObject::event
+01 000000aa`11112333 00007ff7`22223333 PlugOS!VideoWidget::paintEvent

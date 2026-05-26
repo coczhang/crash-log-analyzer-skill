@@ -1,0 +1,12 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["windows"],
+  "domains": ["memory", "ffmpeg_video"],
+  "references": ["references/windows.md", "references/qt-cpp.md", "references/ffmpeg-video.md"],
+  "exception_codes": ["0xc0000374"],
+  "key_fields": {
+    "windows_event_id": ["1001"],
+    "wer_bucket": ["1729448486488140084"],
+    "report_id": ["77777777-8888-9999-aaaa-bbbbbbbbbbbb"]
+  }
+}

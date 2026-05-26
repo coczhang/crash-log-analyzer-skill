@@ -1,0 +1,10 @@
+{
+  "exit_classification": "normal exit",
+  "platforms": ["linux"],
+  "confidence": "medium",
+  "signals_or_statuses": ["status=0/SUCCESS"],
+  "key_fields": {
+    "systemd_result": ["success"],
+    "exec_main_status": ["0"]
+  }
+}

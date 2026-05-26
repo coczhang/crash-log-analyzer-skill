@@ -1,0 +1,4 @@
+May 26 10:00:01 host systemd[1]: app.service: Main process exited, code=exited, status=0/SUCCESS
+May 26 10:00:01 host systemd[1]: app.service: Deactivated successfully.
+Result=success
+ExecMainStatus=0

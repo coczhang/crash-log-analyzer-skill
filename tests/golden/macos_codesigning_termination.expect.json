@@ -1,0 +1,9 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["macos"],
+  "references": ["references/macos.md"],
+  "key_fields": {
+    "termination_namespace": ["CODESIGNING"],
+    "binary_uuid": ["ABCDEF12-3456-7890-ABCD-EF1234567890"]
+  }
+}

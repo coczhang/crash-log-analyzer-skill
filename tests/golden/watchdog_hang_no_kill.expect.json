@@ -1,0 +1,11 @@
+{
+  "exit_classification": "hang",
+  "domains": ["watchdog"],
+  "references": ["references/watchdog.md"],
+  "confidence": "medium",
+  "key_fields": {
+    "pid": ["777"],
+    "last_heartbeat_time": ["2026-05-26T13:04:30.000Z"],
+    "restart_reason": ["heartbeat_timeout"]
+  }
+}

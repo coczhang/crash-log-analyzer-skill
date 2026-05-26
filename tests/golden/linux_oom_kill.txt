@@ -1,0 +1,4 @@
+May 26 11:22:01 host kernel: Out of memory: Killed process 4455 (YourApp) total-vm:7424000kB, anon-rss:6400000kB
+May 26 11:22:02 host systemd[1]: your-app.service: Main process exited, code=killed, status=9/KILL
+May 26 11:22:02 host systemd[1]: your-app.service: Failed with result 'signal'.
+container exited with code 137

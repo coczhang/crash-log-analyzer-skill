@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "script": "collect_macos_crash_info.sh",
+  "script_version": "1.1.0",
+  "platform": "macos",
+  "collected_at": "2026-05-26T02:00:00Z",
+  "process": "YourApp",
+  "app_path": "/Applications/YourApp.app",
+  "hours": "24",
+  "redacted": true,
+  "zip_requested": true,
+  "warnings": [],
+  "warnings_file": "collection-warnings.txt",
+  "warnings_count": 0,
+  "files": [
+    {
+      "path": "summary.txt",
+      "bytes": 96,
+      "sha256": "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcd"
+    }
+  ]
+}

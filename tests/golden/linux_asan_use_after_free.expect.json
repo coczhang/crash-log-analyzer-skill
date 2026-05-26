@@ -1,0 +1,10 @@
+{
+  "exit_classification": "crash",
+  "platforms": ["linux"],
+  "domains": ["memory", "ffmpeg_video", "threading"],
+  "references": ["references/linux.md", "references/qt-cpp.md", "references/ffmpeg-video.md"],
+  "confidence": "medium",
+  "fault_context": {
+    "first_app_frame": "#1 0x00000051cafe in VideoBuffer::releaseFrame(VideoFrame*) /src/video_buffer.cpp:88"
+  }
+}

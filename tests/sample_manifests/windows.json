@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "script": "collect_windows_crash_info.ps1",
+  "script_version": "1.1.0",
+  "platform": "windows",
+  "collected_at": "2026-05-26T10:00:00.0000000+08:00",
+  "process_name": "YourApp.exe",
+  "hours": 24,
+  "redacted": true,
+  "zip_requested": true,
+  "warnings": [],
+  "warnings_file": "collection-warnings.txt",
+  "warnings_count": 0,
+  "files": [
+    {
+      "path": "summary.json",
+      "bytes": 128,
+      "sha256": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+    }
+  ]
+}
