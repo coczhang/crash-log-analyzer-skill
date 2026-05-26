@@ -70,19 +70,19 @@ your-project/
 在 Windows 上通常是：
 
 ```text
-C:\Users\coczh\.codex\skills\
+%USERPROFILE%\.codex\skills\
 ```
 
 最终目录结构应类似：
 
 ```text
-C:\Users\coczh\.codex\skills\crash-log-analyzer\SKILL.md
+%USERPROFILE%\.codex\skills\crash-log-analyzer\SKILL.md
 ```
 
 复制安装：
 
 ```powershell
-$src = "C:\coczhang\GitHub\crash-log-analyzer-skill\.agents\skills\crash-log-analyzer"
+$src = (Resolve-Path ".agents\skills\crash-log-analyzer").Path
 $dstRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME "skills" } else { Join-Path $env:USERPROFILE ".codex\skills" }
 $dst = Join-Path $dstRoot "crash-log-analyzer"
 
@@ -93,7 +93,7 @@ Copy-Item -Path $src -Destination $dst -Recurse -Force
 如果希望后续在这个仓库中修改 skill 后，全局版本自动同步，推荐使用 junction，而不是复制：
 
 ```powershell
-$src = "C:\coczhang\GitHub\crash-log-analyzer-skill\.agents\skills\crash-log-analyzer"
+$src = (Resolve-Path ".agents\skills\crash-log-analyzer").Path
 $dstRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME "skills" } else { Join-Path $env:USERPROFILE ".codex\skills" }
 $dst = Join-Path $dstRoot "crash-log-analyzer"
 
